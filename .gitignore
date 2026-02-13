@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+node_modules
 /.pnp
 .pnp.js
 
@@ -9,26 +9,30 @@
 *.db
 
 # testing
-/coverage
+coverage
 
 # storybook
 storybook-static
 *storybook.log
 
 # playwright
-/test-results/
-/playwright-report/
-/playwright/.cache/
+test-results/
+playwright-report/
+playwright/.cache/
 
 # next.js
-/.next
-/out
+.next
+out
 
 # cache
 .swc/
 
+# turbo
+.turbo
+
 # production
-/build
+build
+dist
 
 # misc
 .DS_Store
@@ -49,3 +53,13 @@ local
 
 # vercel
 .vercel
+
+# expo
+.expo
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
