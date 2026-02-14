@@ -1,91 +1,18 @@
 # Free and Open Source SaaS Boilerplate with Tailwind CSS and Shadcn UI
 
 <p align="center">
-  <a href="https://react-saas.com"><img height="300" src="public/assets/images/nextjs-starter-banner.png?raw=true" alt="Next.js SaaS Template"></a>
+  <a href="https://react-saas.com"><img height="300" src="apps/web/public/assets/images/nextjs-starter-banner.png?raw=true" alt="Next.js SaaS Template"></a>
 </p>
 
-🚀 **SaaS Boilerplate** is a powerful and fully customizable template to kickstart your SaaS applications. Built with **Next.js** and **Tailwind CSS**, and the modular UI components of **Shadcn UI**. This **Next.js SaaS Template** helps you to quickly build and launch SaaS with minimal effort.
+🚀 **SaaS Boilerplate** is a powerful and fully customizable **Turborepo monorepo** template to kickstart your SaaS applications. It includes a **Next.js** web app and a **React Native (Expo)** mobile app, both sharing the same authentication backend. Built with **Tailwind CSS** and the modular UI components of **Shadcn UI** (web) and **NativeWind** (mobile), this SaaS template helps you quickly build and launch across web and mobile with minimal effort.
 
-Packed with essential features like built-in **Authentication**, **Multi-Tenancy** with Team support, **Role & Permission**, Database, I18n (internationalization), Landing Page, User Dashboard, Form handling, SEO optimization, Logging, Error reporting with [Sentry](https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo), Testing, Deployment, Monitoring, and **User Impersonation**, this SaaS template provides everything you need to get started.
+Packed with essential features like self-hosted **Authentication** with [Better Auth](https://www.better-auth.com/), **Multi-Tenancy** with Team support, **Role & Permission**, Database, I18n (internationalization), Landing Page, User Dashboard, Form handling, SEO optimization, Logging, Transactional Email with [Resend](https://resend.com), File Storage with [Cloudflare R2](https://www.cloudflare.com/products/r2/), Error reporting with [Sentry](https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo), Testing, Deployment, and Monitoring, this SaaS template provides everything you need to get started.
 
-Designed with developers in mind, this **Next.js Starter Kit** uses TypeScript for type safety and integrates ESLint to maintain code quality, along with Prettier for consistent code formatting. The testing suite combines Vitest and React Testing Library for robust unit testing, while Playwright handles integration and E2E testing. Continuous integration and deployment are managed via GitHub Actions. For user management, authentication is handled by [Clerk](https://go.clerk.com/zGlzydF). For database operations, it uses Drizzle ORM for type-safe database management across popular databases like PostgreSQL, SQLite, and MySQL. One recommended option is to use [Prisma PostgreSQL](https://www.prisma.io/?via=saasboilerplatetop), which provides a free PostgreSQL database that is compatible and has been tested with SaaS Boilerplate.
+Designed with developers in mind, this **Next.js Starter Kit** uses TypeScript for type safety and integrates ESLint to maintain code quality, along with Prettier for consistent code formatting. The testing suite combines Vitest and React Testing Library for robust unit testing, while Playwright handles integration and E2E testing. Continuous integration and deployment are managed via GitHub Actions. For user management, authentication is self-hosted with [Better Auth](https://www.better-auth.com/), providing email/password login, email verification, and password reset out of the box. For database operations, it uses Drizzle ORM with [Neon PostgreSQL](https://neon.tech) for type-safe, serverless database management.
 
-Whether you're building a new SaaS app or looking for a flexible, **production-ready SaaS template**, this boilerplate has you covered. This free, open-source starter kit has everything you need to accelerate your development and scale your product with ease.
+Whether you're building a new SaaS app or looking for a flexible, **production-ready SaaS template**, this boilerplate has you covered. This free, open-source starter kit has everything you need to accelerate your development and scale your product with ease — across both web and mobile platforms.
 
 Clone this project and use it to create your own SaaS. You can check the live demo at [SaaS Boilerplate](https://react-saas.com), which is a demo with a working authentication and multi-tenancy system.
-
-## Sponsors
-
-<table width="100%">
-  <tr height="187px">
-    <td align="center" width="33%">
-      <a href="https://go.clerk.com/zGlzydF">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ixartz/SaaS-Boilerplate/assets/1328388/6fb61971-3bf1-4580-98a0-10bd3f1040a2">
-          <source media="(prefers-color-scheme: light)" srcset="https://github.com/ixartz/SaaS-Boilerplate/assets/1328388/f80a8bb5-66da-4772-ad36-5fabc5b02c60">
-          <img alt="Clerk – Authentication & User Management for Next.js" src="https://github.com/ixartz/SaaS-Boilerplate/assets/1328388/f80a8bb5-66da-4772-ad36-5fabc5b02c60">
-        </picture>
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://www.coderabbit.ai?utm_source=next_js_starter&utm_medium=github&utm_campaign=next_js_starter_oss_2025">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/coderabbit-logo-dark.svg?raw=true">
-          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/coderabbit-logo-light.svg?raw=true">
-          <img alt="CodeRabbit" src="public/assets/images/coderabbit-logo-light.svg?raw=true">
-        </picture>
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/sentry-white.png?raw=true">
-          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/sentry-dark.png?raw=true">
-          <img alt="Sentry" src="public/assets/images/sentry-dark.png?raw=true">
-        </picture>
-      </a>
-      <a href="https://about.codecov.io/codecov-free-trial/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/codecov-white.svg?raw=true">
-          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/codecov-dark.svg?raw=true">
-          <img alt="Codecov" src="public/assets/images/codecov-dark.svg?raw=true">
-        </picture>
-      </a>
-    </td>
-  </tr>
-  <tr height="187px">
-    <td align="center" width="33%">
-      <a href="https://launch.arcjet.com/Q6eLbRE">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/arcjet-dark.svg?raw=true">
-          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/arcjet-light.svg?raw=true">
-          <img alt="Arcjet" src="public/assets/images/arcjet-light.svg?raw=true">
-        </picture>
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://l.crowdin.com/next-js">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/crowdin-white.png?raw=true">
-          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/crowdin-dark.png?raw=true">
-          <img alt="Crowdin" src="public/assets/images/crowdin-dark.png?raw=true">
-        </picture>
-      </a>
-    </td>
-    <td align="center" style=width="33%">
-      <a href="https://nextjs-boilerplate.com/pro-saas-starter-kit">
-        <img src="public/assets/images/nextjs-boilerplate-saas.png?raw=true" alt="Next.js SaaS Boilerplate with React" />
-      </a>
-    </td>
-  </tr>
-  <tr height="187px">
-    <td align="center" width="33%">
-      <a href="mailto:contact@creativedesignsguru.com">
-        Add your logo here
-      </a>
-    </td>
-  </tr>
-</table>
 
 ### Demo
 
@@ -93,40 +20,41 @@ Clone this project and use it to create your own SaaS. You can check the live de
 
 | Landing Page | User Dashboard |
 | --- | --- |
-| [![Next.js Boilerplate SaaS Landing Page](public/assets/images/nextjs-boilerplate-saas-landing-page.png)](https://react-saas.com) | [![Next.js Boilerplate SaaS User Dashboard](public/assets/images/nextjs-boilerplate-saas-user-dashboard.png)](https://react-saas.com/dashboard) |
+| [![Next.js Boilerplate SaaS Landing Page](apps/web/public/assets/images/nextjs-boilerplate-saas-landing-page.png)](https://react-saas.com) | [![Next.js Boilerplate SaaS User Dashboard](apps/web/public/assets/images/nextjs-boilerplate-saas-user-dashboard.png)](https://react-saas.com/dashboard) |
 
 | Team Management | User Profile |
 | --- | --- |
-| [![Next.js Boilerplate SaaS Team Management](public/assets/images/nextjs-boilerplate-saas-multi-tenancy.png)](https://react-saas.com/dashboard/organization-profile/organization-members) | [![Next.js Boilerplate SaaS User Profile](public/assets/images/nextjs-boilerplate-saas-user-profile.png)](https://react-saas.com/dashboard/user-profile) |
+| [![Next.js Boilerplate SaaS Team Management](apps/web/public/assets/images/nextjs-boilerplate-saas-multi-tenancy.png)](https://react-saas.com/dashboard/organization-profile/organization-members) | [![Next.js Boilerplate SaaS User Profile](apps/web/public/assets/images/nextjs-boilerplate-saas-user-profile.png)](https://react-saas.com/dashboard/user-profile) |
 
 | Sign Up | Sign In |
 | --- | --- |
-| [![Next.js Boilerplate SaaS Sign Up](public/assets/images/nextjs-boilerplate-saas-sign-up.png)](https://react-saas.com/sign-up) | [![Next.js Boilerplate SaaS Sign In](public/assets/images/nextjs-boilerplate-saas-sign-in.png)](https://react-saas.com/sign-in) |
+| [![Next.js Boilerplate SaaS Sign Up](apps/web/public/assets/images/nextjs-boilerplate-saas-sign-up.png)](https://react-saas.com/sign-up) | [![Next.js Boilerplate SaaS Sign In](apps/web/public/assets/images/nextjs-boilerplate-saas-sign-in.png)](https://react-saas.com/sign-in) |
 
 | Landing Page with Dark Mode (Pro Version) | User Dashboard with Dark Mode (Pro Version) |
 | --- | --- |
-| [![Next.js Boilerplate SaaS Landing Page Dark Mode](public/assets/images/nextjs-boilerplate-saas-landing-page-dark-mode.png)](https://pro-demo.nextjs-boilerplate.com) | [![Next.js Boilerplate SaaS User Dashboard Dark Mode](public/assets/images/nextjs-boilerplate-saas-user-dashboard-sidebar-dark-mode.png)](https://pro-demo.nextjs-boilerplate.com/dashboard) |
+| [![Next.js Boilerplate SaaS Landing Page Dark Mode](apps/web/public/assets/images/nextjs-boilerplate-saas-landing-page-dark-mode.png)](https://pro-demo.nextjs-boilerplate.com) | [![Next.js Boilerplate SaaS User Dashboard Dark Mode](apps/web/public/assets/images/nextjs-boilerplate-saas-user-dashboard-sidebar-dark-mode.png)](https://pro-demo.nextjs-boilerplate.com/dashboard) |
 
 | User Dashboard with Sidebar (Pro Version) |
 | --- |
-| [![Next.js Boilerplate SaaS User Dashboard Sidebar](public/assets/images/nextjs-boilerplate-saas-user-dashboard-sidebar.png)](https://pro-demo.nextjs-boilerplate.com) |
+| [![Next.js Boilerplate SaaS User Dashboard Sidebar](apps/web/public/assets/images/nextjs-boilerplate-saas-user-dashboard-sidebar.png)](https://pro-demo.nextjs-boilerplate.com) |
 
 ### Features
 
 Developer experience first, extremely flexible code structure and only keep what you need:
 
-- ⚡ [Next.js](https://nextjs.org) with App Router support
+- 📦 [Turborepo](https://turbo.build) monorepo with shared packages
+- ⚡ [Next.js](https://nextjs.org) with App Router support (Web)
+- 📱 [Expo](https://expo.dev) + [React Native](https://reactnative.dev) mobile app with [NativeWind](https://www.nativewind.dev/)
 - 🔥 Type checking [TypeScript](https://www.typescriptlang.org)
 - 💎 Integrate with [Tailwind CSS](https://tailwindcss.com) and Shadcn UI
 - ✅ Strict Mode for TypeScript and [React](https://react.dev)
-- 🔒 Authentication with [Clerk](https://go.clerk.com/zGlzydF): Sign up, Sign in, Sign out, Forgot password, Reset password, and more.
-- 👤 Passwordless Authentication with Magic Links, Multi-Factor Auth (MFA), Social Auth (Google, Facebook, Twitter, GitHub, Apple, and more), Passwordless login with Passkeys, User Impersonation
+- 🔒 Self-hosted authentication with [Better Auth](https://www.better-auth.com/): Sign up, Sign in, Sign out, Email verification, Password reset, and more
+- 📱 Shared auth across web and mobile via [@better-auth/expo](https://www.better-auth.com/docs/plugins/expo)
 - 👥 Multi-tenancy & team support: create, switch, update organization and invite team members
 - 📝 Role-based access control and permissions
-- 👤 Multi-Factor Auth (MFA), Social Auth (Google, Facebook, Twitter, GitHub, Apple, and more), User Impersonation
-- 📦 Type-safe ORM with DrizzleORM, compatible with PostgreSQL, SQLite, and MySQL
-- 💽 Offline and local development database with PGlite
-- ☁️ Remote and production database with [Prisma Postgres](https://www.prisma.io/?via=saasboilerplate)
+- 📦 Type-safe ORM with [DrizzleORM](https://orm.drizzle.team) and [Neon PostgreSQL](https://neon.tech) (serverless)
+- 📧 Transactional email with [Resend](https://resend.com)
+- 🗄️ File storage with [Cloudflare R2](https://www.cloudflare.com/products/r2/)
 - 🌐 Multi-language (i18n) with [next-intl](https://next-intl-docs.vercel.app/) and [Crowdin](https://l.crowdin.com/next-js)
 - ♻️ Type-safe environment variables with T3 Env
 - ⌨️ Form with [React Hook Form](https://react-hook-form.com)
@@ -182,86 +110,82 @@ Built-in features from Next.js:
 Run the following command on your local environment:
 
 ```shell
-git clone --depth=1 https://github.com/ixartz/SaaS-Boilerplate.git my-project-name
+git clone --depth=1 https://github.com/jfeliweb/SaaS-Boilerplate.git my-project-name
 cd my-project-name
 npm install
 ```
 
 For your information, all dependencies are updated every month.
 
-Then, you can run the project locally in development mode with live reload by executing:
+Then, you can run all apps (web + mobile) locally in development mode with live reload by executing:
 
 ```shell
 npm run dev
 ```
 
-Open http://localhost:3000 with your favorite browser to see your project.
+This uses [Turborepo](https://turbo.build) to run both the Next.js web app and the Expo mobile app simultaneously.
+
+- Open http://localhost:3000 with your favorite browser for the **web app**
+- The **mobile app** will start with Expo — press `i` for iOS simulator, `a` for Android emulator, or scan the QR code with Expo Go
+
+To run only a specific app:
+
+```shell
+# Web only
+npm run dev --filter=@saas/web
+
+# Mobile only
+npm run dev --filter=@saas/mobile
+```
 
 Need advanced features? Next.js 16 & React 19, Multi-tenancy & Teams, Roles & Permissions, Shadcn UI, End-to-End Typesafety with oRPC, Stripe Payment, Light / Dark mode. Try [Next.js Boilerplate Pro](https://nextjs-boilerplate.com/pro-saas-starter-kit).
 
 Or, need a Self-hosted auth stack (Better Auth)? Try [Next.js Boilerplate Max](https://nextjs-boilerplate.com/nextjs-multi-tenant-saas-boilerplate)
 
-### Free vs Pro vs Max version
-
-This project offers a free open-source version and premium Pro/Max versions. Here's a detailed comparison:
-
-| Features | Free Version | Pro Version | Max Version |
-|---------|:------------:|:-----------:|:-----------:|
-| **Authentication** | ✅ | ✅ | ✅ |
-| **Self-Hosted Authentication (Better Auth)** | ❌ | ❌ | ✅ |
-| **Social Login (Google, Facebook, GitHub, etc.)** | ✅ | ✅ | ✅ |
-| **Multi-Factor Auth & User Impersonation** | ✅ | ✅ | ✅ |
-| **Multi-tenancy & Team Support** | ✅ | ✅ | ✅ |
-| **Role-based Access Control (RBAC)** | ✅ | ✅ | ✅ |
-| **Landing Page (Hero, Features, Pricing)** | ✅ | ✅ | ✅ |
-| **Internationalization (i18n)** | ✅ | ✅ | ✅ |
-| **Drizzle ORM & Dev Database** | ✅ | ✅ | ✅ |
-| **GitHub Actions** | ✅ | ✅ | ✅ |
-| **VSCode Configuration** | ✅ | ✅ | ✅ |
-| **Built for Humans & AI Agents (Agents.md)** | ❌ | ❌ | ✅ |
-| **Transactional Emails (React Email)** | ❌ | ❌ | ✅ |
-| **Bun: package manager** | ❌ | ❌ | ✅ |
-| **[Sentry Error Monitoring](https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo)** | ✅ | ✅ | ✅ |
-| **Shadcn UI** | ✅ | ✅ | ✅ |
-| **Next.js** | 14 | 16 | 16 |
-| **React** | 18 | 19 | 19 |
-| **Tailwind CSS** | 3 | 4 | 4 |
-| **ESLint** | 8 | 9 | 9 |
-| **User Dashboard** | Basic | Extended | Extended |
-| **Code Quality Tools** | Basic | Extended | Extended |
-| **Testing: Unit, Integration, E2E, Visual** | Basic | Extended | Extended |
-| **Stripe Integration** | ❌ | ✅ | ✅ |
-| **Todo App Example (CRUD)** | ❌ | ✅ | ✅ |
-| **End-to-End Typesafe APIs (oRPC)** | ❌ | ✅ | ✅ |
-| **Dark Mode** | ❌ | ✅ | ✅ |
-| **Latest version** | ❌ | ✅ | ✅ |
-| **Email support (1 year)** | ❌ | ✅ | ✅ |
-
-**Live Demos:**
-- Free Version: [https://react-saas.com](https://react-saas.com)
-- Pro Version: [https://pro-demo.nextjs-boilerplate.com](https://pro-demo.nextjs-boilerplate.com)
-- Max Version: [https://max-demo.nextjs-boilerplate.com](https://max-demo.nextjs-boilerplate.com)
-
 ### Set up authentication
 
-Create a Clerk account at [Clerk.com](https://go.clerk.com/zGlzydF) and create a new application in the Clerk Dashboard. Then, copy the values of `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` into the `.env.local` file (which is not tracked by Git):
+This project uses [Better Auth](https://www.better-auth.com/) for self-hosted authentication. No external service or account is required — authentication runs entirely within your own app.
+
+In your `apps/web/.env.local` file (which is not tracked by Git), set a secret key for Better Auth:
 
 ```shell
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_pub_key
-CLERK_SECRET_KEY=your_clerk_secret_key
+BETTER_AUTH_SECRET=your_random_secret_key
 ```
 
-In your Clerk Dashboard, you also need to `Enable Organization` by navigating to `Organization management` > `Settings` > `Enable organization`.
+The `BETTER_AUTH_URL` is already set to `http://localhost:3000` in `apps/web/.env` for local development. Update it to your production URL when deploying.
 
-Now, you have a fully working authentication system with Next.js: Sign up, Sign in, Sign out, Forgot password, Reset password, Update profile, Update password, Update email, Delete account, and more.
+Better Auth provides email/password authentication, email verification, and password reset out of the box. The auth API is served via a Next.js catch-all route at `/api/auth/[...all]`, and the mobile app connects to the same backend using `@better-auth/expo`.
+
+Now, you have a fully working self-hosted authentication system with Next.js and React Native: Sign up, Sign in, Sign out, Email verification, Password reset, and more.
 
 ### Set up remote database
 
-The project uses DrizzleORM, a type-safe ORM that is compatible with PostgreSQL, SQLite, and MySQL databases. By default, the project is set up to work seamlessly with PostgreSQL and you can easily choose any PostgreSQL database provider.
+The project uses DrizzleORM, a type-safe ORM, paired with [Neon PostgreSQL](https://neon.tech) for serverless database access. By default, the project is set up to work seamlessly with Neon and you can easily choose any PostgreSQL database provider.
 
-To set up a remote and production database, you need to create a PostgreSQL database and obtain the connection string. One recommended option is to use [Prisma PostgreSQL](https://www.prisma.io/?via=saasboilerplate), which provides a free PostgreSQL database. This database is compatible and has been tested with Next.js Boilerplate.
+To set up a remote and production database, create a free account at [Neon](https://neon.tech) and create a new project. In the Neon Dashboard, copy the connection string and add it as the `DATABASE_URL` variable in your `apps/web/.env.local` file:
 
-After creating your Prisma account, you can get the connection string in the `Connect to your database` section and select the `Any client` tab. Then, you can generate the connection string by clicking the `Generate database credentials` button. Finally, you can copy the connection string and add the `DATABASE_URL` variable to the `.env.local` file.
+```shell
+DATABASE_URL=your_neon_database_url
+```
+
+### Set up transactional email
+
+The project uses [Resend](https://resend.com) for sending transactional emails (email verification, password reset, etc.). Create a free account at [Resend](https://resend.com), obtain your API key, and add it to `apps/web/.env.local`:
+
+```shell
+RESEND_API_KEY=your_resend_api_key
+```
+
+### Set up file storage (optional)
+
+For file uploads, the project uses [Cloudflare R2](https://www.cloudflare.com/products/r2/). Create an R2 bucket in your Cloudflare dashboard and add the following to `apps/web/.env.local`:
+
+```shell
+R2_ENDPOINT=your_r2_endpoint
+R2_ACCESS_KEY_ID=your_r2_access_key_id
+R2_SECRET_ACCESS_KEY=your_r2_secret_access_key
+R2_BUCKET_NAME=your_r2_bucket_name
+```
 
 ### Translation (i18n) setup
 
@@ -271,45 +195,88 @@ To set up translation (i18n), create an account at [Crowdin.com](https://l.crowd
 
 After defining the environment variables in your GitHub Actions, your localization files will be synchronized with Crowdin every time you push a new commit to the `main` branch.
 
+### Mobile app
+
+The monorepo includes a **React Native** mobile app built with [Expo](https://expo.dev) and [NativeWind](https://www.nativewind.dev/) for Tailwind-style styling. The mobile app shares the same Better Auth backend as the web app.
+
+**Key technologies:**
+- **Expo 52** with Expo Router (file-based routing)
+- **NativeWind 4** for Tailwind CSS styling in React Native
+- **@better-auth/expo** for seamless authentication against the web API
+- **Expo Secure Store** for secure token storage on device
+
+**Running the mobile app:**
+
+```shell
+# Run from the monorepo root
+npm run dev --filter=@saas/mobile
+
+# Or from the mobile app directory
+cd apps/mobile
+npx expo start
+```
+
+**Configuration:**
+
+The mobile app connects to the web app's auth API via `EXPO_PUBLIC_API_URL` (defaults to `http://localhost:3000` for local development). The deep linking scheme is configured as `saas-mobile://` in `apps/mobile/app.json`.
+
+**App structure:**
+- `apps/mobile/app/(auth)/` — Sign in and Sign up screens
+- `apps/mobile/app/(tabs)/` — Dashboard and Profile tab screens
+- `apps/mobile/lib/auth-client.ts` — Better Auth client configured for Expo
+
 ### Project structure
 
 ```shell
 .
-├── README.md                       # README file
-├── .github                         # GitHub folder
-├── .husky                          # Husky configuration
-├── .storybook                      # Storybook folder
-├── .vscode                         # VSCode configuration
-├── migrations                      # Database migrations
-├── public                          # Public assets folder
-├── scripts                         # Scripts folder
-├── src
-│   ├── app                         # Next JS App (App Router)
-│   ├── components                  # Reusable components
-│   ├── features                    # Components specific to a feature
-│   ├── libs                        # 3rd party libraries configuration
-│   ├── locales                     # Locales folder (i18n messages)
-│   ├── models                      # Database models
-│   ├── styles                      # Styles folder
-│   ├── templates                   # Templates folder
-│   ├── types                       # Type definitions
-│   └── utils                       # Utilities folder
-├── tests
-│   ├── e2e                         # E2E tests, also includes Monitoring as Code
-│   └── integration                 # Integration tests
-├── tailwind.config.js              # Tailwind CSS configuration
-└── tsconfig.json                   # TypeScript configuration
+├── README.md                          # README file
+├── .github                            # GitHub folder
+├── .husky                             # Husky configuration
+├── .vscode                            # VSCode configuration
+├── turbo.json                         # Turborepo configuration
+├── apps
+│   ├── web                            # Next.js web application
+│   │   ├── .storybook                 # Storybook folder
+│   │   ├── migrations                 # Database migrations
+│   │   ├── public                     # Public assets folder
+│   │   ├── src
+│   │   │   ├── app                    # Next.js App (App Router)
+│   │   │   ├── components             # Reusable components
+│   │   │   ├── features               # Components specific to a feature
+│   │   │   ├── libs                   # 3rd party libraries configuration
+│   │   │   ├── locales                # Locales folder (i18n messages)
+│   │   │   ├── models                 # Database models
+│   │   │   ├── styles                 # Styles folder
+│   │   │   ├── templates              # Templates folder
+│   │   │   ├── types                  # Type definitions
+│   │   │   └── utils                  # Utilities folder
+│   │   └── tests
+│   │       ├── e2e                    # E2E tests, also includes Monitoring as Code
+│   │       └── integration            # Integration tests
+│   └── mobile                         # Expo React Native mobile application
+│       ├── app                        # Expo Router (file-based routing)
+│       │   ├── (auth)                 # Auth screens (sign-in, sign-up)
+│       │   └── (tabs)                 # Tab screens (dashboard, profile)
+│       └── lib                        # Mobile utilities and auth client
+├── packages                           # Shared packages
+│   ├── api-client                     # Shared API client
+│   ├── tailwind-config                # Shared Tailwind configuration
+│   ├── types                          # Shared TypeScript types
+│   ├── utils                          # Shared utility functions
+│   └── validators                     # Shared validation schemas
+└── tsconfig.json                      # Root TypeScript configuration
 ```
 
 ### Customization
 
 You can easily configure Next.js SaaS Boilerplate by searching the entire project for `FIXME:` to make quick customization. Here are some of the most important files to customize:
 
-- `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your website favicon
-- `src/utils/AppConfig.ts`: configuration file
-- `src/templates/BaseTemplate.tsx`: default theme
-- `next.config.mjs`: Next.js configuration
-- `.env`: default environment variables
+- `apps/web/public/apple-touch-icon.png`, `apps/web/public/favicon.ico`, `apps/web/public/favicon-16x16.png` and `apps/web/public/favicon-32x32.png`: your website favicon
+- `apps/web/src/utils/AppConfig.ts`: configuration file
+- `apps/web/src/templates/BaseTemplate.tsx`: default theme
+- `apps/web/next.config.mjs`: Next.js configuration
+- `apps/web/.env`: default environment variables for the web app
+- `apps/mobile/app.json`: mobile app name, slug, and scheme
 
 You have full access to the source code for further customization. The provided code is just an example to help you start your project. The sky's the limit 🚀.
 
@@ -317,12 +284,12 @@ In the source code, you will also find `PRO` comments that indicate the code tha
 
 ### Change database schema
 
-To modify the database schema in the project, you can update the schema file located at `./src/models/Schema.ts`. This file defines the structure of your database tables using the Drizzle ORM library.
+To modify the database schema in the project, you can update the schema file located at `apps/web/src/models/Schema.ts`. This file defines the structure of your database tables using the Drizzle ORM library.
 
 After making changes to the schema, generate a migration by running the following command:
 
 ```shell
-npm run db:generate
+npm run db:generate --filter=@saas/web
 ```
 
 This will create a migration file that reflects your schema changes. The migration is automatically applied during the next database interaction, so there is no need to run it manually or restart the Next.js server.
@@ -351,11 +318,11 @@ Then, you can run the following command to create a new price:
 npm run stripe:setup-price
 ```
 
-After running the command, you need to copy the price ID and paste it in `src/utils/AppConfig.ts` by updating the existing price ID with the new one.
+After running the command, you need to copy the price ID and paste it in `apps/web/src/utils/AppConfig.ts` by updating the existing price ID with the new one.
 
 In your Stripe Dashboard, you are required to configure your customer portal settings at https://dashboard.stripe.com/test/settings/billing/portal. Most importantly, you need to save the settings.
 
-In your `.env` file, you need to update the `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` with your own Stripe Publishable key. You can find the key in your Stripe Dashboard. Then, you also need to create a new file named `.env.local` and add the following environment variables in the newly created file:
+In your `apps/web/.env` file, you need to update the `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` with your own Stripe Publishable key. You can find the key in your Stripe Dashboard. Then, you also need to create a new file named `apps/web/.env.local` and add the following environment variables in the newly created file:
 
 ```shell
 STRIPE_SECRET_KEY=your_stripe_secret_key
@@ -368,7 +335,7 @@ You get the `STRIPE_SECRET_KEY` from your Stripe Dashboard. The `STRIPE_WEBHOOK_
 npm run dev
 ```
 
-You'll find in your terminal the webhook signing secret. You can copy it and paste it in your `.env.local` file.
+You'll find in your terminal the webhook signing secret. You can copy it and paste it in your `apps/web/.env.local` file.
 
 ### Testing
 
@@ -391,13 +358,13 @@ In the local environment, visual testing is disabled, and the terminal will disp
 
 ### Enable Edge runtime (optional)
 
-The App Router folder is compatible with the Edge runtime. You can enable it by adding the following lines `src/app/layouts.tsx`:
+The App Router folder is compatible with the Edge runtime. You can enable it by adding the following lines `apps/web/src/app/layouts.tsx`:
 
 ```tsx
 export const runtime = 'edge';
 ```
 
-For your information, the database migration is not compatible with the Edge runtime. So, you need to disable the automatic migration in `src/libs/DB.ts`:
+For your information, the database migration is not compatible with the Edge runtime. So, you need to disable the automatic migration in `apps/web/src/libs/DB.ts`:
 
 ```tsx
 await migrate(db, { migrationsFolder: './migrations' });
@@ -427,15 +394,21 @@ It generates an optimized production build of the boilerplate. To test the gener
 $ npm run start
 ```
 
-You also need to defined the environment variables `CLERK_SECRET_KEY` using your own key.
+You also need to define the following environment variables for production:
+
+- `BETTER_AUTH_SECRET`: a random secret key for session encryption
+- `BETTER_AUTH_URL`: your production URL (e.g., `https://yourdomain.com`)
+- `DATABASE_URL`: your Neon PostgreSQL connection string
 
 This command starts a local server using the production build. You can now open http://localhost:3000 in your preferred browser to see the result.
+
+For the **mobile app**, use [EAS Build](https://docs.expo.dev/build/introduction/) to create production builds for iOS and Android. Make sure to set `EXPO_PUBLIC_API_URL` to your production web app URL.
 
 ### Error Monitoring
 
 The project uses [Sentry](https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo) to monitor errors. In the development environment, no additional setup is needed: NextJS SaaS Boilerplate is pre-configured to use Sentry and Spotlight (Sentry for Development). All errors will automatically be sent to your local Spotlight instance, allowing you to experience Sentry locally.
 
-For production environment, you'll need to create a Sentry account and a new project. Then, in `next.config.mjs`, you need to update the `org` and `project` attributes in `withSentryConfig` function. Additionally, add your Sentry DSN to `sentry.client.config.ts`, `sentry.edge.config.ts` and `sentry.server.config.ts`.
+For production environment, you'll need to create a Sentry account and a new project. Then, in `apps/web/next.config.mjs`, you need to update the `org` and `project` attributes in `withSentryConfig` function. Additionally, add your Sentry DSN to `apps/web/sentry.client.config.ts`, `apps/web/sentry.edge.config.ts` and `apps/web/sentry.server.config.ts`.
 
 ### Code coverage
 
@@ -457,7 +430,7 @@ The project uses [Checkly](https://www.checklyhq.com/?utm_source=github&utm_medi
 
 To use Checkly, you must first create an account on [their website](https://www.checklyhq.com/?utm_source=github&utm_medium=sponsorship&utm_campaign=next-js-boilerplate). After creating an account, generate a new API key in the Checkly Dashboard and set the `CHECKLY_API_KEY` environment variable in GitHub Actions. Additionally, you will need to define the `CHECKLY_ACCOUNT_ID`, which can also be found in your Checkly Dashboard under User Settings > General.
 
-To complete the setup, update the `checkly.config.ts` file with your own email address and production URL.
+To complete the setup, update the `apps/web/checkly.config.ts` file with your own email address and production URL.
 
 ### Useful commands
 
@@ -499,83 +472,6 @@ Licensed under the MIT License, Copyright © 2026
 
 See [LICENSE](LICENSE) for more information.
 
-## Sponsors
-
-<table width="100%">
-  <tr height="187px">
-    <td align="center" width="33%">
-      <a href="https://go.clerk.com/zGlzydF">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github.com/ixartz/SaaS-Boilerplate/assets/1328388/6fb61971-3bf1-4580-98a0-10bd3f1040a2">
-          <source media="(prefers-color-scheme: light)" srcset="https://github.com/ixartz/SaaS-Boilerplate/assets/1328388/f80a8bb5-66da-4772-ad36-5fabc5b02c60">
-          <img alt="Clerk – Authentication & User Management for Next.js" src="https://github.com/ixartz/SaaS-Boilerplate/assets/1328388/f80a8bb5-66da-4772-ad36-5fabc5b02c60">
-        </picture>
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://www.coderabbit.ai?utm_source=next_js_starter&utm_medium=github&utm_campaign=next_js_starter_oss_2025">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/coderabbit-logo-dark.svg?raw=true">
-          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/coderabbit-logo-light.svg?raw=true">
-          <img alt="CodeRabbit" src="public/assets/images/coderabbit-logo-light.svg?raw=true">
-        </picture>
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/sentry-white.png?raw=true">
-          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/sentry-dark.png?raw=true">
-          <img alt="Sentry" src="public/assets/images/sentry-dark.png?raw=true">
-        </picture>
-      </a>
-      <a href="https://about.codecov.io/codecov-free-trial/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/codecov-white.svg?raw=true">
-          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/codecov-dark.svg?raw=true">
-          <img alt="Codecov" src="public/assets/images/codecov-dark.svg?raw=true">
-        </picture>
-      </a>
-    </td>
-  </tr>
-  <tr height="187px">
-    <td align="center" width="33%">
-      <a href="https://launch.arcjet.com/Q6eLbRE">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/arcjet-dark.svg?raw=true">
-          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/arcjet-light.svg?raw=true">
-          <img alt="Arcjet" src="public/assets/images/arcjet-light.svg?raw=true">
-        </picture>
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://l.crowdin.com/next-js">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="public/assets/images/crowdin-white.png?raw=true">
-          <source media="(prefers-color-scheme: light)" srcset="public/assets/images/crowdin-dark.png?raw=true">
-          <img alt="Crowdin" src="public/assets/images/crowdin-dark.png?raw=true">
-        </picture>
-      </a>
-    </td>
-    <td align="center" style=width="33%">
-      <a href="https://nextjs-boilerplate.com/pro-saas-starter-kit">
-        <img src="public/assets/images/nextjs-boilerplate-saas.png?raw=true" alt="Next.js SaaS Boilerplate with React" />
-      </a>
-    </td>
-  </tr>
-  <tr height="187px">
-    <td align="center" width="33%">
-      <a href="mailto:contact@creativedesignsguru.com">
-        Add your logo here
-      </a>
-    </td>
-  </tr>
-</table>
-
 ---
 
-Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
-
-Looking for a custom boilerplate to kick off your project? I'd be glad to discuss how I can help you build one. Feel free to reach out anytime at contact@creativedesignsguru.com!
-
-[![Sponsor Next JS Boilerplate](https://cdn.buymeacoffee.com/buttons/default-red.png)](https://github.com/sponsors/ixartz)
+Made with ♥ by [jFeliWeb](https://jfeliweb.com)
